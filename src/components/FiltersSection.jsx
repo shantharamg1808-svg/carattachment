@@ -11,12 +11,12 @@ export default function FiltersSection({ filters, onFilterChange, filteredCount 
     <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4 bg-white p-5 rounded-2xl shadow-sm border border-slate-200">
       <div className="flex flex-wrap items-center gap-3 w-full">
         <span className="text-sm font-semibold text-slate-700 flex items-center gap-1.5 mr-2">
-          <Filter size={18} className="text-indigo-500" /> Filters:
+          <Filter size={18} className="text-brand-500" /> Filters:
         </span>
 
         <div className="relative">
           <select
-            className="bg-slate-50 border border-slate-200 text-slate-700 text-sm rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 block p-2.5 pl-3 pr-8 outline-none appearance-none cursor-pointer hover:bg-slate-100 transition-colors"
+            className="bg-slate-50 border border-slate-200 text-slate-700 text-sm rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 block p-2.5 pl-3 pr-8 outline-none appearance-none cursor-pointer hover:bg-slate-100 transition-colors"
             value={filters.budget}
             onChange={(e) => handleSelectChange('budget', e.target.value)}
           >
@@ -39,7 +39,7 @@ export default function FiltersSection({ filters, onFilterChange, filteredCount 
 
         <div className="relative">
           <select
-            className="bg-slate-50 border border-slate-200 text-slate-700 text-sm rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 block p-2.5 pl-3 pr-8 outline-none appearance-none cursor-pointer hover:bg-slate-100 transition-colors"
+            className="bg-slate-50 border border-slate-200 text-slate-700 text-sm rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 block p-2.5 pl-3 pr-8 outline-none appearance-none cursor-pointer hover:bg-slate-100 transition-colors"
             value={filters.transmission}
             onChange={(e) => handleSelectChange('transmission', e.target.value)}
           >
@@ -62,7 +62,7 @@ export default function FiltersSection({ filters, onFilterChange, filteredCount 
 
         <div className="relative">
           <select
-            className="bg-slate-50 border border-slate-200 text-slate-700 text-sm rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 block p-2.5 pl-3 pr-8 outline-none appearance-none cursor-pointer hover:bg-slate-100 transition-colors"
+            className="bg-slate-50 border border-slate-200 text-slate-700 text-sm rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 block p-2.5 pl-3 pr-8 outline-none appearance-none cursor-pointer hover:bg-slate-100 transition-colors"
             value={filters.fuel}
             onChange={(e) => handleSelectChange('fuel', e.target.value)}
           >
@@ -83,9 +83,9 @@ export default function FiltersSection({ filters, onFilterChange, filteredCount 
           </div>
         </div>
       </div>
-      <div className="text-sm text-slate-600 whitespace-nowrap bg-indigo-50 px-4 py-2 rounded-xl border border-indigo-100 font-medium w-full md:w-auto text-center md:text-left flex items-center justify-center gap-1.5">
-        <Car size={16} className="text-indigo-500" />
-        Showing <strong className="text-indigo-700 text-base">{filteredCount}</strong> vehicles
+      <div className="text-sm text-slate-600 whitespace-nowrap bg-slate-50 px-4 py-2 rounded-xl border border-slate-100 font-medium w-full md:w-auto text-center md:text-left flex items-center justify-center gap-1.5">
+        <Car size={16} className="text-brand-500" />
+        Showing <strong className="text-brand-600 text-base">{filteredCount}</strong> vehicles
       </div>
     </div>
   );

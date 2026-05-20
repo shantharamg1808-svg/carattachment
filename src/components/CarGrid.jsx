@@ -12,7 +12,7 @@ export default function CarGrid({ filteredData, onSelectCar, onClearFilters }) {
         </p>
         <button
           onClick={onClearFilters}
-          className="mt-4 px-6 py-2 bg-indigo-50 text-indigo-700 rounded-full hover:bg-indigo-100 transition-colors font-medium"
+          className="mt-4 px-6 py-2 bg-slate-50 text-brand-600 rounded-full hover:bg-slate-100 transition-colors font-medium"
         >
           Clear all filters
         </button>

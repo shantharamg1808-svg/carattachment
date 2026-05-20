@@ -27,8 +27,8 @@ export default function CategorySummary({ selectedCategory, onCategoryChange }) 
           className={`bg-white rounded-2xl p-5 shadow-sm border transition-all text-left group
             ${
               selectedCategory === cat
-                ? 'border-indigo-500 ring-2 ring-indigo-500 ring-opacity-50'
-                : 'border-slate-200 hover:border-indigo-300 hover:shadow-md'
+                ? 'border-brand-500 ring-2 ring-brand-500 ring-opacity-50'
+                : 'border-slate-200 hover:border-brand-300 hover:shadow-md'
             }`}
         >
           <div className="flex justify-between items-center mb-3">
